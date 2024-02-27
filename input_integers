@@ -1,0 +1,23 @@
+def moyenne (a,b):
+    return (a+b)/2
+
+
+def multiplication():
+    print("Veuillez choisir le premier nombre:")
+    
+    a = int(input())
+    print("Veuillez choisir le deuxième nombre:")
+    b = int(input())
+    
+    
+    print("Voici vos nombres choisis: {}, {}".format(a, b))
+   
+    
+    confirmation = input("Êtes-vous sûr de ce choix ? Tapez 'y' pour confirmer: ")
+    
+    if confirmation == 'y':
+        result = a * b
+        print("Le résultat de la multiplication de ces 2 nombres est" ,  result , "\nDe plus voici la moyenne de ces deux nombres:" ,  moyenne(a,b))
+        
+    else:
+        print("Opération annulée.")
